@@ -1,0 +1,77 @@
+html,body{
+	margin: 0;
+	padding: 0;
+	background: #fff;
+}
+.imgvision, .imgvision .imgcontainer, .imgcontainer .imgsingle{
+	width: 790px;
+	height: 340px;
+}
+.imgvision{
+	position: relative;
+	/*font-size: 0px;*/
+	border: 2px solid darkcyan;
+	margin: 100px auto;
+}
+.imgcontainer .imgsingle{
+	position: absolute;
+	display: none;
+}
+/*.imgcontainer .imgsingle:first-child{
+	display: block;
+}*/
+.imgcontainer img{
+	border: none;
+}
+.arrowleft,.arrowright{
+	width: 30px;
+	height: 60px;
+	background: rgba(0,0,0,0.5);
+	position: absolute;
+	top: 50%;
+	z-index: 1;
+	margin-top: -30px;
+	font-size: 20px;
+	color: #fff;
+	text-align: center;
+	line-height: 60px;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	display: none;
+}
+.arrowleft{
+	left: 0;
+}
+.arrowright{
+	right: 0;
+}
+.imgdot{
+	/*width: 100px;*/
+	min-width: 20px;
+	position: absolute;
+	bottom: 5px;
+	left: 50%;
+	z-index: 1;
+	margin-left: -60px;
+	cursor: default;
+	background: rgba(255,255,255,0.4);
+	border-radius: 20px;
+	padding: 0 10px;
+	text-align: center;
+}
+.imgdot span{
+	width: 12px;
+	height: 12px;
+	border-radius: 50%;
+	display: inline-block;
+	margin: 0 5px;
+}
+.on{
+	background: #db192a;
+}
+.off{
+	background: #fff;
+}

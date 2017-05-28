@@ -1,0 +1,137 @@
+
+
+
+/*在html页面需加上此行, 其中target-densitydpi属性仅兼容android设备*/
+/*<meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">*/
+
+
+
+html, body{
+    padding: 0;
+    margin: 0;
+}
+.picContentWrapper{
+    width: 98%;
+    margin: .3rem auto auto;
+    padding-bottom: 6.6rem;
+    overflow: auto;
+}
+
+.picContentWrapper .picContentDiv{
+    float: left;
+    width: 32.75%;
+    /*height: 2.2rem;*/
+    height: 6rem;
+    border-right: .2rem solid #fff;
+    border-bottom: .2rem solid #fff;
+    position: relative;
+}
+.picContentWrapper .picContentDiv:nth-child(3n){
+    border-right: 0;
+}
+.picContentWrapper .picContentDiv:nth-last-child(1){
+    border-bottom: 0;
+}
+
+.picContentDiv .selectIcon{
+    width: 1.2rem;
+    height: 1.2rem;
+    border: .05rem solid #fff;
+    border-radius: 100%;
+    color: #fff;
+    font-size: 100%;
+    text-align: center;
+    line-height: 130%;
+    /*background: rgba(0,0,0,0.4);*/
+    /*background: rgba(101,248,206,1);*/
+    position: absolute;
+    top: .3rem;
+    right: .3rem;
+    z-index: 2000;
+    /*display: none;*/
+}
+.selectIconShow{
+    display: block;
+}
+.selectIconHidden{
+    display: none;
+}
+.picUnselectedIcon{
+    background: rgba(0,0,0,0.4);
+}
+.picSelectedIcon{
+    background: rgba(101,248,206,1);
+}
+
+.picContentDiv .shadowMask{
+    width: 100%;
+    height: 100%;
+    background: #333;
+    opacity: .4;
+    filter: alpha(opacity=40);
+    position: absolute;
+    top: 0;
+    z-index: 1000;
+    /*display: none;*/
+}
+.picUnselectedMask{
+    display: none;
+}
+.picSelectedMask{
+    display: block;
+}
+
+.picContentDiv .selectedFlag{
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: red;
+    font-size: 1rem;
+    display: none;
+}
+
+.picMenuBar{
+    width: 100%;
+    height: 3.2rem;
+    border-top: .05rem solid #ccc;
+    background: rgba(255,255,255,1);
+    /*background: rgba(204,204,204,0.5);*/
+    position: fixed;
+    bottom: 0;
+    z-index: 3000;
+    text-align: center;
+    /*display: none;*/
+}
+.picMenuBarShow{
+    display: block;
+}
+.picMenuBarHidden{
+    display: none;
+}
+.picMenuBar span{
+    border: .05rem solid #ccc;
+    border-radius: .3rem;
+    padding: .1rem;
+    background: #eee;
+    display: inline-block;
+    width: 3.6rem;
+    height: 1.6rem;
+    line-height: 1.6rem;
+    color: #666;
+    font-size: 1rem;
+    position: relative;
+    top: .7rem;
+}
+.picMenuBar span:nth-child(2){
+    margin: auto 1.5rem auto 1.5rem;
+}
+.picMenuBar span:nth-child(1):active, .picMenuBar span:nth-child(2):active{
+    background: #ccc;
+}
+
+
+
+
+
+                                              /****** 2016-10-16 * DESIGN BY LI KUN ******/
+                                             

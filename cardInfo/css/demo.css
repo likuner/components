@@ -1,0 +1,57 @@
+
+.divContentWrapper{
+    width: 97%;
+    height: auto;
+    margin: .3rem auto;
+    padding-bottom: 3rem;
+}
+.divContentWrapper .innerDivContent{
+    width: 100%;
+    height: 15rem;
+    border-radius: .5rem;
+    /*background: #333 url(../images/ji_and_qiao.jpg) no-repeat center center;*/
+    background-color: #333;
+    /*background-image: url(../images/ji_and_qiao.jpg);*/
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% 100%;
+    position: relative;
+    margin-bottom: .3rem;
+}
+.innerDivContent:active{
+    background-size: 101% 101%;
+}
+.innerDivContent .herOrHisName{
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #fff;
+    position: absolute;
+    bottom: 5rem;
+    left: .5rem;
+}
+.innerDivContent .herOrHisAge{
+    font-size: 1.2rem;
+    color: #fff;
+    position: absolute;
+    bottom: 3rem;
+    left: .5rem;
+}
+.innerDivContent .herOrHisStars{
+    font-size: 1.2rem;
+    color: gold;
+    position: absolute;
+    bottom: 1rem;
+    left: .5rem;
+}
+.innerDivContent .priceTag{
+    font-size: 1.2rem;
+    color: #fff;
+    position: absolute;
+    bottom: 3rem;
+    right: .5rem;
+}
+
+
+
+
+

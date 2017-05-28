@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>组织机构</title>
+        <meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+        <link rel="stylesheet" href="./css/organsNew.css"/>
+        <style type="text/css">
+            /*html,body{
+             width: 100%;
+             background: #fff;
+             }*/
+
+
+        </style>
+    </head>
+    <body>
+
+        <div class="orgContentWrapper">
+            <!-- <div class="orgLevOneWrapper"></div>
+            <div class="orgLevTwoWrapper"></div>
+            <div class="orgLevThreePlusWrapper"></div> -->
+            
+            
+            <!--
+            <div class="orgLevOneWrapper">
+
+            <div class="orgLevOneItem">
+            <span class="orgId">101sfefsrh</span>
+            <span class="orgName">vnirvdfgdgyjyukiili;lrgsgfesdfv</span>
+            <span class="orgFlag"></span>
+            </div>
+
+            <div class="orgLevOneItem">
+            <span class="orgId">101sfedgrh</span>
+            <span class="orgName">vnirvv</span>
+            <span class="orgFlag"></span>
+            </div>
+
+            </div>
+
+            <div class="orgLevTwoWrapper">
+
+            <div class="orgLevTwoItem">
+            <span class="orgId">wfefe</span>
+            <span class="orgName">frf</span>
+            <span class="orgFlag"></span>
+            </div>
+
+            </div>
+
+            <div class="orgLevThreePlusWrapper">
+
+            <div class="orgLevThreePlusItem">
+            <span class="orgId">yhyj</span>
+            <span class="orgName">iloil</span>
+            <span class="orgFlag"></span>
+            </div>
+
+            </div>
+            -->
+        </div>
+
+        <script src="./js/jquery-2.1.0.js"></script>
+        <script src="./js/organsNew.js"></script>
+        <script>
+
+            var arr = [
+                {orgid:101,orgname:"一厂",orgcode:101,parentid:null},
+                {orgid:102,orgname:"二厂",orgcode:102,parentid:null},
+                {orgid:103,orgname:"三厂",orgcode:103,parentid:null},
+                {orgid:104,orgname:"四厂",orgcode:104,parentid:null},
+                
+                {orgid:10101,orgname:"一厂部门一",orgcode:10101,parentid:101},
+                {orgid:10102,orgname:"一厂部门二",orgcode:10102,parentid:101},
+                {orgid:10103,orgname:"一厂部门三",orgcode:10103,parentid:101},
+                {orgid:10301,orgname:"三厂部门一",orgcode:10301,parentid:103},
+                {orgid:10302,orgname:"三厂部门二",orgcode:10302,parentid:103},
+                {orgid:10303,orgname:"三厂部门三",orgcode:10303,parentid:103},
+                
+                {orgid:1010101,orgname:"一厂部门一车间一",orgcode:1010101,parentid:10101},
+                {orgid:1010102,orgname:"一厂部门一车间二",orgcode:1010102,parentid:10101},
+                {orgid:1010103,orgname:"一厂部门一车间三",orgcode:1010103,parentid:10101},
+                
+                {orgid:101010101,orgname:"一厂部门一车间一工位一",orgcode:101010101,parentid:1010101},
+                {orgid:101010201,orgname:"一厂部门一车间二工位一",orgcode:101010201,parentid:1010102},
+                
+                {orgid:10101010101,orgname:"一厂部门一车间一工位一nan",orgcode:10101010101,parentid:101010101},
+                {orgid:10101020101,orgname:"一厂部门一车间二工位一nan",orgcode:10101020101,parentid:101010201},
+                
+                {orgid:1010102010101,orgname:"一厂部门一车间二工位一nan-WW",orgcode:1010102010101,parentid:10101020101},
+            ];
+
+            $(".orgContentWrapper").getOrgans({orgArr : arr});
+
+        </script>
+
+    </body>
+</html>

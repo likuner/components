@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html class="um landscape min-width-240px min-width-320px min-width-480px min-width-768px min-width-1024px">
+    <head>
+        <title></title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+        <link rel="stylesheet" href="css/demo.css"/>
+    </head>
+
+    <body style="background-color: #f3f7f3">
+                
+        <div class="divContentWrapper">
+            
+            <!-- 
+                
+            <div class="innerDivContent">
+                <span class="herOrHisName">创兴体育  | 你身边的滑雪教练</span>
+                <span class="herOrHisAge"><i>99</i>岁</span>
+                <span class="herOrHisStars">☆☆☆☆☆★★★★</span>
+                <span class="priceTag">¥<i>1999</i></span>
+            </div> 
+            
+            -->      
+            
+        </div>
+
+
+        <script src="js/jquery-2.1.0.js"></script>
+        <script src="js/demo.js"></script>        
+
+        <script type="text/javascript">
+                
+            $(function(){
+                
+                var arr = [];
+                
+                var obj1 = {name:'111111', age:11, star:1.5, price:1111, bgiURL:'./images/1.jpg', clickCbk:function(){alert('111');}};
+                arr.push(obj1);
+                
+                var obj2 = {name:'222222', age:22, star:2, price:2222, bgiURL:'./images/2.jpg', clickCbk:function(){alert('222');}};
+                arr.push(obj2);
+                
+                var obj3 = {name:'333333', age:33, star:3.5, price:3333, bgiURL:'./images/3.jpg', clickCbk:function(){alert('333');}};
+                arr.push(obj3);
+                
+                var obj4 = {name:'444444', age:44, star:4.5, price:4444, bgiURL:'./images/4.jpg', clickCbk:function(){alert('444');}};
+                arr.push(obj4);
+                
+                var obj5 = {name:'555555', age:55, star:5, price:5555, bgiURL:'./images/5.jpg', clickCbk:function(){alert('555');}};
+                arr.push(obj5);
+                
+                
+                for(var item in arr){
+                    
+                    $(".divContentWrapper").cardInfo(arr[item]);
+                    
+                }
+                
+            });
+
+        </script>
+
+    </body>
+</html>
+

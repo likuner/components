@@ -1,0 +1,35 @@
+<html>
+    <head><title>Love</title></head>
+    <body bgcolor=#FFC0CB>
+        <script type="text/javascript">
+            var d = document;
+            canvas = d.body.appendChild( d.createElement( 'canvas' ) );
+            context = canvas.getContext( '2d' );
+            time = 0;
+            canvas.width = w = innerWidth;
+            canvas.height = h = innerHeight;
+            cos = Math.cos;
+            sin = Math.sin;
+            abs = Math.abs;
+            pow = Math.pow;
+            PI = Math.PI;
+            setInterval( function() {
+                context.clearRect( 0, 0, w, h );
+                context.fillStyle = 'rgba(138,43,226,0.5)';
+                context.globalCompositeOperation = 'lighter';
+                time += 0.5;
+                i = 20000;
+                while( i-- ) {
+                    r = ( ( w + h ) * 0.4 ) * ( cos( ( time + i ) * ( 0.05 + sin( time * 0.00005 ) ) ) / 4.0 );
+                    t = ( i - 10000.0 ) / 10000.0 * PI;
+                    x = cos( t ) * r;
+                    y = ( pow( cos( t ) , 2.0 / 3.0 ) + sin( t ) ) * r;
+                    if( x < 0 ){
+                        context.fillRect( x + w / 2 , y + h / 5 * 3 , 1 , 1 );
+                        context.fillRect( -x + w / 2 , y + h / 5 * 3 , 1 , 1 );
+                    }
+                }
+            }, 16 );
+        </script>
+    </body>
+</html>

@@ -1,0 +1,94 @@
+html,body{
+	margin: 0;
+	padding: 0;
+	background: #fff;
+}
+.sliderwrapper{
+	width: 100%;
+	height: 320px;
+	margin: 100px auto;
+}
+.newslider{
+	width: 1080px;
+	height: 320px;
+	position: relative;
+	margin: 0 auto;
+	overflow: hidden;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	/*text-align: center;*/
+}
+.newslider:before, .newslider:after{
+	content: "";
+	width: 163px;
+	height: 320px;
+	position: absolute;
+	top: 0;
+	z-index: 1;
+	/*background: #fff;
+	opacity: 0.5;*/
+	background: rgba(255,255,255,0.5);
+}
+.newslider:before{
+	left: 0;
+}
+.newslider:after{
+	right: 0;
+}
+.imglist{
+	/*width: 6000px;*/
+	height: 320px;
+	font-size: 0px;  /*去除img表签的默认边距*/
+	position: absolute;
+	top: 0;
+	/*left: -552px;*/
+}
+.imgitem{
+	width: 715px;
+	height: 320px;
+	margin-right: 19.5px;
+	/*float: left;*/
+	display: inline-block;
+}
+.imgitem img{
+	border: none;  /*去除img表签的默认边框*/
+}
+.imgitem a:link,.imgitem a:visited,.imgitem a:hover,.imgitem a:active{
+	text-decoration: none;
+}
+.arrowL, .arrowR{
+	width: 128px;
+	height: 128px;
+	position: absolute;
+	top: 96px;
+	z-index: 2;
+	background: url(../img/icon.png) no-repeat;
+	cursor: pointer;
+}
+.arrowL{
+	left: 0;
+	background-position: 75% 100%;
+}
+.arrowR{
+	right: 0;
+	background-position: 100% 100%;
+}
+.imgorder{
+	width: 100px;
+	height: 24px;
+	font-size: 20px;
+	/*border: 1px solid darkcyan;*/
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 3;
+	color: #eee;
+	letter-spacing: 0;
+	text-align: center;
+	margin: 0 auto;
+	cursor: pointer;
+	
+}

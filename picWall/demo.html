@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	    <title></title>
+		<meta charset="utf-8">
+		<!-- important -->
+		<meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+		<!-- important -->
+		<link rel="stylesheet" href="./css/picWall.css"/>
+		
+	</head>
+	<body>
+	    
+	    <span class="fontview"> </span>
+        
+        <br>
+        
+        <span class="widthview"> </span>
+	    
+	    
+	    
+	    <div class="picContentWrapper">
+	        <!-- 
+            <div class="picContentDiv">
+    			<img src="./images/1.jpg" width="100%" height="100%"/>
+    			<span class="selectIcon">√</span>
+    			<span class="shadowMask"></span>
+    			<span class="selectedFlag"></span>
+			</div>
+			-->
+		</div>
+		
+		<!-- 
+	    <div class="picMenuBar">
+    	    <span class="btnDelete">删 除</span>
+    	    <span class="btnSelectAll">全 选</span>
+    	    <span class="btnCancel">取 消</span>
+		</div> 
+		-->
+	    
+	    
+	    
+	    <script src="./js/jquery-2.1.0.js"></script>
+	    <script src="./js/picWall.js"></script>
+	    <script >
+			              
+            var picArr_ = [
+                              {picURL : './images/1.jpg'}, 
+                              {picURL : './images/2.jpg'}, 
+                              {picURL : './images/3.jpg'}, 
+                              {picURL : './images/4.jpg'}, 
+                              {picURL : './images/6.jpg'},
+                              {picURL : './images/1.jpg'}, 
+                              {picURL : './images/2.jpg'}, 
+                              {picURL : './images/3.jpg'}, 
+                              {picURL : './images/4.jpg'}, 
+                              {picURL : './images/6.jpg'},
+                              {picURL : './images/1.jpg'}, 
+                              {picURL : './images/2.jpg'}, 
+                              {picURL : './images/3.jpg'}, 
+                              {picURL : './images/4.jpg'}, 
+                              {picURL : './images/6.jpg'},
+                              {picURL : './images/1.jpg'}, 
+                              {picURL : './images/2.jpg'}, 
+                              {picURL : './images/3.jpg'}, 
+                              {picURL : './images/4.jpg'}, 
+                              {picURL : './images/6.jpg'}
+                          
+                          ];
+			
+			
+			$(function(){
+			    
+			    $(".fontview").text($("html").css("fontSize"));
+                
+                $(".widthview").text('分辨率: '+$(window).width() + '*' + $(window).height());   
+                
+                $.each(picArr_, function(i, item){
+                
+                    $(".picContentWrapper").picWall(item);
+                    
+                });
+                
+			});
+			
+			
+			
+			
+			
+		</script>
+	    
+	</body>
+</html>

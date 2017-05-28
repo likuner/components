@@ -1,0 +1,78 @@
+html,body{
+    margin: 0;
+    padding: 0;
+}
+.orgContentWrapper {
+    width: 100%;
+    /*height: 200px;*/
+    /*background: lightblue;*/
+    display: -webkit-flex;
+    display: flex;
+}
+.orgLevOneWrapper, .orgLevTwoWrapper, .orgLevThreePlusWrapper{
+    -webkit-flex: 1;
+    flex: 1;
+    height: auto;
+    /*background: blue;*/
+}
+.orgLevOneItem, .orgLevTwoItem, .orgLevThreePlusItem{
+    display: -webkit-flex;
+    display: flex;
+    width: 100%;
+    height: 3rem;
+    /*border: 1px solid #333;*/
+}
+.orgId{
+    -webkit-flex: 1;
+    flex: 1;
+    height: 100%;
+    border: 1px solid #333;
+    /*border-right: none;*/
+    overflow: hidden;
+    font-size: .1rem;
+}
+.orgName{
+    -webkit-flex: 7;
+    flex: 7;
+    height: 100%;
+    border: 1px solid #333;
+    /*border-right: none;*/
+    border-left: none;
+    font-size: .8rem;
+    color: #333;
+    text-align: center;
+    line-height: 3rem;
+    overflow: hidden;
+    /*display: table-cell;*/
+    /*vertical-align: middle;*/
+}
+.orgFlag{
+    -webkit-flex: 2;
+    flex: 2;
+    height: 100%;
+    border: 1px solid #333;
+    border-left: none;
+    /*background-image: url(../icons/icon-ok-act.png);*/
+    /*background-image: url(../icons/icon-next-act.png);*/
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 50% 50%;
+}
+.flagNo{
+    background-image: none;
+}
+.flagNext{
+    background-image: url(../icons/icon-next-act.png);
+}
+.flagChecked{
+    background-image: url(../icons/icon-ok-act.png);
+}
+
+
+
+
+
+
+
+
+
