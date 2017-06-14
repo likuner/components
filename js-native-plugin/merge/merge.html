@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="merge.js"></script>
+</head>
+<body>
+	
+
+
+
+	<script>
+		
+		obj1 = {
+			name : "li",
+			age : 24,
+			gender : "male",
+			school : "henan"
+		};
+		obj2 = {
+			name : "liu",
+			age : 25,
+			gender : {
+				one : 1,
+				two : 2,
+				three : {
+					four : 4,
+					five : 5
+				}
+			},
+			school : ["beijing" , "shanghaiii"]
+		};
+
+		var obj = merge(obj1, obj2);
+		console.info(JSON.stringify(obj));
+		
+	</script>
+</body>
+</html>
