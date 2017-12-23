@@ -1,0 +1,29 @@
+body{
+	margin: 0;
+	padding: 0;
+	background: #333;
+}
+#slider-wrapper{
+	width: 100%;
+	height: auto;
+	background: lightblue;
+	overflow: hidden;
+}
+#slider-list{
+	list-style: none;
+	/*width: 100%;*/
+	/*height: 100%;*/
+	margin: 0;
+	padding: 0;
+	font-size: 0;
+	position: relative;
+}
+#slider-list li{
+	position: absolute;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	-webkit-backface-visibility: hidden;
+}
+#slider-list img{
+}
