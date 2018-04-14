@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<title>calendar</title>
+	<link rel="stylesheet" href="./dateCalendar.css">
+	<script src="./dateCalendar.js"></script>
+</head>
+<body>
+	<div id="date-calendar">
+		<!--
+		<table class="date-table-title">
+			<thead>
+				<tr>
+					<th class="weekend">日</th>
+					<th>一</th>
+					<th>二</th>
+					<th>三</th>
+					<th>四</th>
+					<th>五</th>
+					<th class="weekend">六</th>
+				</tr>
+			</thead>
+		</table>
+
+		<div id="date-calendar-wrapper">
+			
+			<div class="date-calendar-content" id="date-calendar-content-1">
+				<table class="date-table-month">
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td>1</td>
+						<td>2</td>
+						<td class="weekend">3</td>
+					</tr>
+					<tr>
+						<td class="weekend">4</td>
+						<td>5</td>
+						<td class="today">6</td>
+						<td>7</td>
+						<td>8</td>
+						<td>9</td>
+						<td class="weekend">10</td>
+					</tr>
+					<tr>
+						<td class="weekend">11</td>
+						<td>12</td>
+						<td>13</td>
+						<td>14</td>
+						<td>15</td>
+						<td>16</td>
+						<td class="weekend">17</td>
+					</tr>
+					<tr>
+						<td class="weekend">18</td>
+						<td>19</td>
+						<td>20</td>
+						<td>21</td>
+						<td>22</td>
+						<td>23</td>
+						<td class="weekend">24</td>
+					</tr>
+					<tr>
+						<td class="weekend">25</td>
+						<td>26</td>
+						<td>27</td>
+						<td>28</td>
+						<td>29</td>
+						<td>30</td>
+						<td class="weekend">31</td>
+					</tr>
+				</table>
+				<table class="date-table-month">
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td>1</td>
+						<td>2</td>
+						<td class="weekend">3</td>
+					</tr>
+					<tr>
+						<td class="weekend">4</td>
+						<td>5</td>
+						<td class="today">6</td>
+						<td>7</td>
+						<td>8</td>
+						<td>9</td>
+						<td class="weekend">10</td>
+					</tr>
+					<tr>
+						<td class="weekend">11</td>
+						<td>12</td>
+						<td>13</td>
+						<td>14</td>
+						<td>15</td>
+						<td>16</td>
+						<td class="weekend">17</td>
+					</tr>
+					<tr>
+						<td class="weekend">18</td>
+						<td>19</td>
+						<td>20</td>
+						<td>21</td>
+						<td>22</td>
+						<td>23</td>
+						<td class="weekend">24</td>
+					</tr>
+					<tr>
+						<td class="weekend">25</td>
+						<td>26</td>
+						<td>27</td>
+						<td>28</td>
+						<td>29</td>
+						<td>30</td>
+						<td class="weekend">31</td>
+					</tr>
+				</table>
+				<table class="date-table-month">
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td>1</td>
+						<td>2</td>
+						<td class="weekend">3</td>
+					</tr>
+					<tr>
+						<td class="weekend">4</td>
+						<td>5</td>
+						<td class="today">6</td>
+						<td>7</td>
+						<td>8</td>
+						<td>9</td>
+						<td class="weekend">10</td>
+					</tr>
+					<tr>
+						<td class="weekend">11</td>
+						<td>12</td>
+						<td>13</td>
+						<td>14</td>
+						<td>15</td>
+						<td>16</td>
+						<td class="weekend">17</td>
+					</tr>
+					<tr>
+						<td class="weekend">18</td>
+						<td>19</td>
+						<td>20</td>
+						<td>21</td>
+						<td>22</td>
+						<td>23</td>
+						<td class="weekend">24</td>
+					</tr>
+					<tr>
+						<td class="weekend">25</td>
+						<td>26</td>
+						<td>27</td>
+						<td>28</td>
+						<td>29</td>
+						<td>30</td>
+						<td class="weekend">31</td>
+					</tr>
+				</table>
+			</div>
+
+		</div>
+		-->
+	</div>
+
+	<div id="date-bar">test</div>
+
+
+
+
+	<script>
+
+		function clickcallback ( data ) {
+			document.getElementById("date-bar").innerText = '' + data.year + '年' + data.month + '月' + data.day + '日';
+		}
+		
+		function slidecallback ( year, month, day ) {
+			document.getElementById("date-bar").innerText = '' + year + '年' + month + '月' + day + '日';
+		}
+
+		function initcallback ( year, month, day ) {
+			document.getElementById("date-bar").innerText = '' + year + '年' + month + '月' + day + '日';
+		}
+		
+		new DateCalendar('date-calendar',{
+			// workdayArr: [],
+			clickCallback: clickcallback,
+			slideCallback: slidecallback,
+			initCallback: initcallback
+		});
+
+	</script>
+	
+</body>
+</html>

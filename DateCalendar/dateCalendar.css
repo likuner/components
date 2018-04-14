@@ -1,0 +1,121 @@
+html, body{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+#date-calendar{
+	width: 100%;
+	overflow: auto;
+	position: relative;
+}
+#date-calendar-wrapper{
+	/*width: 100%;*/
+	height: 190px;
+	overflow: hidden;   /*auto or hidden*/
+	background: #f1f2f5;
+	position: relative;
+}
+.date-calendar-content{
+	/*width: 320%;*/
+	height: 190px;
+	background: #f1f2f5;
+	position: absolute;
+	z-index: 9999;
+	/*left: 0;*/
+	top: 0;
+	/*防止闪屏*/
+	backface-visibility: hidden;
+	-ms-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	-webkit-backface-visibility: hidden;
+}
+.date-calendar-content:after, #date-calendar-wrapper:after{
+	display: block;
+	content: '';
+	clear: both;
+}
+#date-calendar-content-2, #date-calendar-content-3{
+	z-index: 8888;
+}
+table{
+	font-size: 14px;
+}
+.date-table-title{
+	width: 100%;
+	/*height: 20px;*/
+	background: #f1f2f5;
+	border-bottom: 1px solid #d8d9dc;
+}
+.date-table-month{
+	/*width: 33%;*/
+	height: 100%;
+	float: left;
+	border-right: 0.5px solid #d8d9dc;
+	border-left: 0.5px solid #d8d9dc;
+	box-sizing: border-box;
+	/*padding-top: 1.5px;*/
+	padding-bottom: 2px;
+}
+.date-table-title, .date-table-month{
+	table-layout: fixed;
+	border-collapse: separate;
+	border-spacing: 17px 0px; 
+}
+.date-table-month{
+	border-spacing: 17px 6px;
+}
+.date-table-title th, .date-table-month td{
+	color: #000000;
+	border-radius: 100%;
+	font-weight: normal;
+}
+.date-table-title .weekend, .date-table-month .weekend{
+	color: #999999;
+}
+.date-table-month .today{
+	background: #557ecb;
+	color: #ffffff;
+}
+/*.date-table-month .clicked{
+	background: #557ecb;
+	color: #ffffff;
+}*/
+.date-table-month .clicked{
+	color: #ffffff;
+	background: url(./image/td-selected.png) no-repeat center center;
+	background-size: contain;
+}
+.second-last-tr{
+	/*display: none;*/
+}
+.end-last-tr{
+	/*display: none;*/
+}
+.tr-hidden{
+	display: none;
+}
+.init-hidden{
+	display: none;
+}
+.tditem{
+	position: relative;
+}
+.workday:after{
+	content: '';
+	width: 4px;
+	height: 4px;
+	font-size: 1px;
+	border-radius: 100%;
+	background: #557ecb;
+	position: absolute;
+	z-index: 9999;
+	/*top: 45px;
+	left: 17.6px;*/
+	top: 104%;
+	left: 46%;
+}
+
+
+
+
+
