@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>DateCalendar</title>
+	<link rel="stylesheet" href="./DateCalendar.css">
+	<script src="./DateCalendar.js"></script>
+</head>
+<body>
+	
+	<div id="container"></div>
+	<div id="show"></div>
+
+	<script>
+		var box = document.getElementById('show');
+
+		DateCalendar('container',{
+			// showingYear:2018,
+			// showingMonth:5,
+			// showingDay:1,
+			// multiLine:true,
+			initCallback:function(year,month,day){
+				box.innerText = year + '年' + month + '月' + day + '日';
+			},
+			slideCallback:function(year,month,day){
+				box.innerText = year + '年' + month + '月' + day + '日';
+			},
+			clickCallback:function(date){
+				box.innerText = date.year + '年' + date.month + '月' + date.day + '日';
+			}
+		});
+
+	</script>
+</body>
+</html>
